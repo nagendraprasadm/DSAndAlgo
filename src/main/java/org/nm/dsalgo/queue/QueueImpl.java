@@ -15,44 +15,39 @@ public class QueueImpl<T> implements Queue<T> {
 		this._arr = new Object[capacity];
 	}
 
-	@Override
 	public int getSize() {
 		return _size;
 	}
 
-	@Override
 	public void enQueue(T data) throws OverFlowException {
-		if(isFull()){
+		if (isFull()) {
 			throw new OverFlowException("OVERFLOW");
-		}else{
-			if(_head == -1){
+		} else {
+			if (_head == -1) {
 				_arr[++_head] = data;
 				_size++;
-			}else{
+			} else {
 				_arr[_head + _size++] = data;
 			}
 		}
 
 	}
 
-	@Override
 	public T deQueue() throws UnderFlowException {
-		if(isEmpty()){
+		if (isEmpty()) {
 			throw new UnderFlowException("UNDERFLOW");
-		}else{
+		} else {
 			_size--;
-			return (T)_arr[_head++];
+			return (T) _arr[_head++];
 		}
 	}
 
-	@Override
-	public boolean isFull() {
-		return _size == _capacity;
-	}
-
-	@Override
 	public boolean isEmpty() {
 		return _size == 0;
+	}
+
+	public boolean isFull() {
+		return _size == _capacity;
 	}
 
 }

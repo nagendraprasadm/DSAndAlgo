@@ -1,4 +1,18 @@
-target
-.project
-.settings
+*.class
+*.project
+*.settings*
+*target
 .classpath
+# Package Files #
+*.jar
+*.war
+*.ear
+*.log
+*.vagrant*
+node_modules*
+*static*
+*/bin/*
+package-lock.json
+.dbeaver-data-sources.xml
+.idea
+.DS_Store
