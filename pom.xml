@@ -7,11 +7,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DS And Algo</name>
 	<properties>
-		<slf4jVersion>1.6.1</slf4jVersion>
+		<slf4jVersion>1.7.28</slf4jVersion>
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
@@ -63,5 +62,29 @@
             </plugin>
         </plugins>
 	</build>
-
+	<repositories>
+		<repository>
+			<id>mavencentral</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>mavencentral</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 </project>

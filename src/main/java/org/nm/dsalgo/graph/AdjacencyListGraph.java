@@ -43,7 +43,6 @@ public class AdjacencyListGraph implements Graph {
 			} catch (IOException e) {
 				throw new Exception(e.getLocalizedMessage(), e);
 			}
-
 		}
 	}
 
