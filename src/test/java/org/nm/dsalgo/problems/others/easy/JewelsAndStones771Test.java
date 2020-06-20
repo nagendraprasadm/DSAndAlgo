@@ -5,14 +5,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class JewelsAndStonesTest
+public class JewelsAndStones771Test
 {
 
-    private static JewelsAndStones inst;
+    private static JewelsAndStones771 inst;
 
     @BeforeClass
     public static void setupClass(){
-        inst = new JewelsAndStones();
+        inst = new JewelsAndStones771();
     }
 
     @Test
